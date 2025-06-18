@@ -1,0 +1,10 @@
+S=fft(s);%frequency domain representation of signal
+fv=(0:N-1)*(fs/N);%frequency vector
+
+%Plot the signal in frequency domain
+figure;
+plot(fv,abs(S));
+xlabel('Frequency (Hz)');
+ylabel('Magnitude');
+title('Input Signal Frequency-domain, |S(\omega)|');
+grid on;
