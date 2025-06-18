@@ -2,7 +2,8 @@ S=fft(s);%frequency domain representation of signal
 fv=(0:N-1)*(fs/N);%frequency vector
 
 %Plot the signal in frequency domain
-figure;
+figure(1);
+subplot(2,1,2);
 plot(fv,abs(S));
 xlabel('Frequency (Hz)');
 ylabel('Magnitude');
